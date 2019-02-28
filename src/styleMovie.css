@@ -1,4 +1,5 @@
-
+/* Aqui empezaremos el diseño de la app de movies */ 
+@import url('https://fonts.googleapis.com/css?family=Mali');
 #root{
     background-color: #35477d;
 
@@ -47,13 +48,13 @@ h1{
 }
 #user{
     font-family: 'Mali', cursive;
-    font-size: 30px;
+    font-size: 20px;
     border: solid #68dbeb ;
     border-radius: 20px;
 }
 #search{
     font-family: 'Mali', cursive;
-    font-size: 30px;
+    font-size: 20px;
     border:solid #68dbeb ;
     border-radius: 20px;
 
