@@ -45,7 +45,3 @@ const forMovie = (dataMovie) =>{
 
     
 
-//const newData = localStorage.getItem("data");
-
-//const dataJson = JSON.parse(newData);
-//console.log(dataJson);
