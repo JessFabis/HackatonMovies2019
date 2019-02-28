@@ -1,0 +1,67 @@
+/* Aqui empezaremos el diseño de la app de movies */ 
+@import url('https://fonts.googleapis.com/css?family=Mali');
+#root{
+    background-color: #35477d;
+
+}
+h1{
+    font-family: 'Mali', cursive;
+    font-size: 40px;
+    text-align: center;
+    color :#ffa900;
+
+
+}
+.cardMovie{
+    display:inline-block;
+    border: #f7b633 solid ;
+    border-radius: 20px;
+    margin :7px;
+    width: 28%;
+    
+
+}
+
+.imagen{
+    width: 60%;
+
+
+}
+.infoMovie{
+    text-align: center;
+    font-family: 'Mali', cursive;
+    color: white;
+    font-size: 20px;
+
+
+    
+}
+.infoMovie h2 {
+    text-align: center;
+    font-size: 25px;
+    color: #5893d4;
+
+}
+.imgMovie{
+    position: relative;
+    left: 20%;
+}
+#user{
+    font-family: 'Mali', cursive;
+    font-size: 30px;
+    border: solid #68dbeb ;
+    border-radius: 20px;
+}
+#search{
+    font-family: 'Mali', cursive;
+    font-size: 30px;
+    border:solid #68dbeb ;
+    border-radius: 20px;
+
+}
+#search:hover{
+    background-color:#68dbeb;
+    opacity: 0.7;
+   
+
+}
