@@ -3,7 +3,7 @@ const user = document.getElementById("user");
 const search = document.getElementById("search");
 const printMovie =  document.getElementById("printMovie");
 let dataMovie = "";
-
+    
 
 search.addEventListener("click",()=>{
     const valueUser = user.value;
