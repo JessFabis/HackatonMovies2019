@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+
+
+#root{
+    background-color: #35477d;
+>>>>>>> upstream/master
 
 
 
@@ -44,6 +51,25 @@ h1{
 
 
 
+<<<<<<< HEAD
+=======
+}
+.imgMovie{
+    position: relative;
+    left: 20%;
+}
+#user{
+    font-family: 'Mali', cursive;
+    font-size: 30px;
+    border: solid #68dbeb ;
+    border-radius: 20px;
+}
+#search{
+    font-family: 'Mali', cursive;
+    font-size: 30px;
+    border:solid #68dbeb ;
+    border-radius: 20px;
+>>>>>>> upstream/master
 
 }
 
@@ -63,9 +89,40 @@ h1{
 
     
 
+<<<<<<< HEAD
 }
 
 .infoMovie, h2 {
+=======
+.box {
+/*     margin: -1.5rem; */
+    width: 12rem;
+    height: 20rem;
+    box-shadow: 0px 0px 2rem 0px #888888;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* transition: 1s all; */
+}
+.box img{
+    width: 100%;
+    height: auto;
+  }
+  @supports(object-fit: cover){
+      .box img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+  }
+ 
+.box:nth-child(2n) {
+    transform: scale(0.85);
+    z-index: -1;
+}
+>>>>>>> upstream/master
 
     text-align: center;
 
@@ -122,5 +179,8 @@ h1{
 
 
 }
+<<<<<<< HEAD
 x
+=======
+>>>>>>> upstream/master
 
