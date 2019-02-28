@@ -12,30 +12,30 @@ search.addEventListener("click",()=>{
     fetch(url)
     .then(response => response.json())
     .then(data => {
-        dataMovie = data;
-    localStorage.setItem("data",JSON.stringify(dataMovie))
-    return dataMovie
+        dataMovie = data.Search;
+   // localStorage.setItem("data",JSON.stringify(dataMovie))
+    forMovie (dataMovie);
+   
     })
    
 });
-dataMovie= JSON.parse(localStorage.getItem("data"));
 const forMovie = (dataMovie) =>{
+    //dataMovie= JSON.parse(localStorage.getItem("data"));
     dataMovie.forEach(element => {
-   let title = element.Title;
-   let year = element.Year;
-   let type = element.Type;
-   let poster = element.Poster;
-   return (title,year,type,poster)
-    })
-   }
-   forMovie.innerhtml += `<div class = "cardMovie">
-<figure><img src = "${dataMovie.Poster}"></figure>
+ let showMovie =
+`<div class = "cardMovie">
+<figure><img src = "${element.Poster}"></figure>
 <div class ="infoMovie">
-<p>titulo:${dataMovie.Title}</p>
-<p>año: ${dataMovie.Year}</p>
-<p>tipo: ${dataMovie.Type}</p></div>
+<p>titulo:${element.Title}</p>
+<p>año: ${element.Year}</p>
+<p>tipo: ${element.Type}</p></div>
 </div>`
 
+  printMovie.insertAdjacentHTML("beforeend",showMovie)
+    })
+   }
+   
+   
 
 
  
