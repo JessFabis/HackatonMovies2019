@@ -38,10 +38,5 @@ const forMovie = (dataMovie) =>{
    
 
 
- 
-
- 
-
-
     
 
