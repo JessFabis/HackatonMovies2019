@@ -24,11 +24,11 @@ const forMovie = (dataMovie) =>{
     dataMovie.forEach(element => {
  let showMovie =
 `<div class = "cardMovie">
-<figure><img src = "${element.Poster}"></figure>
+<figure class ="imgMovie"><img class = "imagen"src = "${element.Poster}"></figure>
 <div class ="infoMovie">
-<p>titulo:${element.Title}</p>
-<p>año: ${element.Year}</p>
-<p>tipo: ${element.Type}</p></div>
+<h2>Title:${element.Title}</h2>
+<p>Year: ${element.Year}</p>
+<p>Type: ${element.Type}</p></div>
 </div>`
 
   printMovie.insertAdjacentHTML("beforeend",showMovie)
