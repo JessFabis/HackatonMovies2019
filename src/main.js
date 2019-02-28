@@ -36,7 +36,7 @@ const forMovie = (dataMovie) =>{
     })
    }
 
-function shiftLeft() {
+/*function shiftLeft() {
     const boxes = document.querySelectorAll(".box");
     const tmpNode = boxes[0];
     boxes[0].className = "box move-out-from-left";
@@ -79,4 +79,4 @@ function shiftRight() {
         boxes[3].className = "box move-to-position5-from-right";
     }, 500);
 
-}
+}*/
