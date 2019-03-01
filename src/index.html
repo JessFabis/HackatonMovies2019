@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href= "https://img.icons8.com/color/50/000000/film-reel.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styleMovie.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    </head>
 
   <body>
@@ -18,7 +19,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a id ="home"class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
               </li>
               <!--<li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
@@ -54,48 +55,112 @@
 
      <p id ="showGenre"></p>
       
-
-
+      
     </div>
+
+
+   
   
       
     
     
     <div class="container">
-
-  <div class="button" onclick="shiftLeft()"><img src="https://image.ibb.co/mRsEb7/left_arrow.png" alt=""></div>
-  <div class="cards-wrapper">
-
-
-      <ul class="cards__container">
-
-        <li class="box"> <img src="img/place.jpg"></li>
-
-        <li class="box" > <img src="img/spiderman.jpg"></li>
-
-        <li class="box"><img src ="img/star.jpg"></li>
-
-        <li class="box"><img src ="img/roma.jpg"></li>
-
-        <li class="box"><img src ="img/mision.jpg"></li>
-
-        <li class="box box--hide"><img src ="img/kkk.jpg"></li>
-
-        <li class="box box--hide"><img src ="img/blackpanter.jpg"></li>
-      </ul>
-
-      <div class="card__text-content">
-
-          <h3 class="card__title">aqui el nombre de la peli</h3>
-
-          <div class="card__summary">reseña de la peli</div>
-
+      
+      
+      <div class="button" onclick="shiftLeft()"><img src="https://image.ibb.co/mRsEb7/left_arrow.png" alt=""></div>
+      <div class="cards-wrapper">
+        <h2>Más destacadas</h2>
+        <ul class="cards__container"> 
+          
+          <li class="box"> <img src="img/place.jpg"></li>
+          
+          <li class="box" > <img src="img/spiderman.jpg"></li>
+          
+          <li class="box"><img src ="img/star.jpg"></li>
+          
+          <li class="box"><img src ="img/roma.jpg"></li>
+          
+          <li class="box"><img src ="img/mision.jpg"></li>
+          
+          <li class="box box--hide"><img src ="img/kkk.jpg"></li>
+          
+          <li class="box box--hide"><img src ="img/blackpanter.jpg"></li>
+        </ul>
+        
+        <div class="card__text-content">
+          </div>
+          </div>
+          <div class="button" onclick="shiftRight()"><img src="https://image.ibb.co/dfPSw7/right_arrow.png" alt=""></div>
+          
       </div>
+   
+    <h2>Estrenos 2019 </h2> 
 
-
-  </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Pelicula</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <h3> Sinopsis</h3><br>
+              Ambientada en la década de 1990, CAPITANA MARVEL de Marvel Studios nos presenta una original y nueva aventura situada en un período nunca antes visto en el Universo Cinematográfico de Marvel. La historia sigue a Carol Danvers, a quien veremos convertirse en una de las heroínas más poderosas del universo cuando la Tierra queda atrapada en medio de una guerra galáctica entre dos razas alienígenas.
+              
+              Créditos y reparto
+              ActoresBrie Larson,Ben Mendelsohn,Samuel L. Jackson
+              
+              ActorsSamuel L Jackson
+              
+              DirectoresAnna Boden
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">
+              <span id="video">
+                  <iframe  src="https://www.youtube.com/embed/uNu8jLw9yF4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </span> Trailer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id= "printModal" class="img-container">
+      <div class="container">
+        
+        <!--Modal-->
+        
+        
+        
+        <img id ="sugerencias"  data-toggle="modal" data-target="#exampleModal"  class="img" src="https://i-h1.pinimg.com/236x/cd/3b/4d/cd3b4d5850211bb0eea9621d316050a3.jpg" title="Capitana Marvel" alt="Foto8">
+        <img class="img" data-toggle="modal" data-target="#exampleModal" src="https://i.ebayimg.com/images/g/zRQAAOSwx9lb~MBA/s-l300.jpg" title="Lion King" alt="Foto9">
+        <img class="img" data-toggle="modal" data-target="#exampleModal" src="https://cd.cinescape.com.pe/cinescape-325x457-265481.jpg" title="La Voz de la Igualdad" alt="Foto10">
+        <img class="img"data-toggle="modal" data-target="#exampleModal" src="http://img.goldposter.com/2018/08/malicious_poster_goldposter_com_1.jpg?x-oss-process=image/resize,m_fill,h_1500,w_1034/quality,q_80" title="Malicius" alt="Foto11">
+    </div>
+        <!--Redes sociales-->
+<footer class ="fotter" >
   
-  <div class="button" onclick="shiftRight()"><img src="https://image.ibb.co/dfPSw7/right_arrow.png" alt=""></div>
+  <section class="icons">
+      <h3>Siguenos</h3>
+<a href="https://www.facebook.com/Filmove-793614014341353/"> <i class="fa fa-facebook-square"  style="font-size:48px;color:aqua"></i></a>
+<a href="https://twitter.com/FILMOV3?lang=en"><i class="fa fa-twitter" style="font-size:48px;color:aqua"></i></a>
+<a href="https://www.instagram.com/filmovoficial/?hl=es-la"><i class="fa fa-instagram" style="font-size:48px;color:aqua"></i></a>
+</section>
+
+<h1>Filmov todos los derechos resevados </h1>
+<h3>Filmov es un proyecto creado por :</h3>
+<h3> Fabiola Juarez, Elizabeth Ramírez, Claudia Ferrusca, Gabriela Castro</h3>
+
+</footer>
+</div>
+
+ 
+
+
+
+
+ 
 
 
 

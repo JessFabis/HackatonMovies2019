@@ -4,8 +4,13 @@ const search = document.getElementById("search");
 const printMovie =  document.getElementById("printMovie");
 let dataMovie = "";
 const imgSugerencias= document.getElementById("sugerencias");
-// const printModal= document.getElementById("printModal");
+const home = document.getElementById("home");
 
+// const printModal= document.getElementById("printModal");
+home.addEventListener("click", () => {
+    printMovie.innerHTML="";
+    showGenre.innerHTML="";
+});
 
 search.addEventListener("click",()=>{
     const valueUser = user.value;
@@ -189,3 +194,17 @@ series.addEventListener("click", () => {
     forMovieGenre(arraySeries);
 })
 
+//funcionamiento de imagenes de sugerencia
+$(".img").mousemove(function(event){
+    var mouse = event.pageX - $(this).offset().left;
+    var mousea = event.pageY - $(this).offset().top;
+   
+    var imgx = (mouse - 300) / 40;
+    var imgy = (mousea - 200) / 40;
+   
+    $(this).css("transform", "translate(" + imgx + "px," + imgy + "px)");
+  });
+
+  $(".img").mouseout(function(){
+    $(this).css("transform", "translate(0px,0px)");
+  });
