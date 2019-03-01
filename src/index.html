@@ -41,66 +41,81 @@
     <div class="container">
 
   <div class="button" onclick="shiftLeft()"><img src="https://image.ibb.co/mRsEb7/left_arrow.png" alt=""></div>
-
   <div class="cards-wrapper">
-<h2> Más destacadas </h2>
-      <ul class="cards__container">
-
-          <li class="box"> <img src="img/place.jpg"></li>
-
-          <li class="box" > <img src="img/spiderman.jpg"></li>
-
-          <li class="box"><img src ="img/star.jpg"></li>
-
-          <li class="box"><img src ="img/roma.jpg"></li>
-
-          <li class="box"><img src ="img/mision.jpg"></li>
-
-          <li class="box box--hide"><img src ="img/kkk.jpg"></li>
-
-          <li class="box box--hide"><img src ="img/blackpanter.jpg"></li>
-      </ul>
-
-      <div class="card__text-content">
-      </div>
-
+    <h2> Más destacadas </h2>
+    <ul class="cards__container">
+      
+      <li class="box"> <img src="img/place.jpg"></li>
+      
+      <li class="box" > <img src="img/spiderman.jpg"></li>
+      
+      <li class="box"><img src ="img/star.jpg"></li>
+      
+      <li class="box"><img src ="img/roma.jpg"></li>
+      
+      <li class="box"><img src ="img/mision.jpg"></li>
+      
+      <li class="box box--hide"><img src ="img/kkk.jpg"></li>
+      
+      <li class="box box--hide"><img src ="img/blackpanter.jpg"></li>
+    </ul>
+    
+    <div class="card__text-content">
+    </div>
+    
   </div>
-
+  
   <div class="button" onclick="shiftRight()"><img src="https://image.ibb.co/dfPSw7/right_arrow.png" alt=""></div>
-
-</div>
-
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Vestibulum at eros</li>
-  </ul>
-  <div class="card-body">
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
-  </div>
+  
+  
 </div>
 <center><h2>Sugerencias  </h2> </center>
 
-  <div class="img-container">
-<div class="container">
-  
-    <img class="img" src="https://i.pinimg.com/564x/27/d0/94/27d0947895439c04ae09fe24a4ec9ed6.jpg" title="Foto8" alt="Foto8">
-    <img class="img" src="https://i.pinimg.com/564x/71/58/c4/7158c449f2e8c96bec564fb845ff2cc0.jpg" title="Foto9" alt="Foto9">
+<div id= "printModal" class="img-container">
+  <div class="container">
+    
+    <img id ="sugerencias"    class="img" src="https://i.pinimg.com/564x/27/d0/94/27d0947895439c04ae09fe24a4ec9ed6.jpg" title="Foto8" alt="Foto8">
+    <!--Modal-->
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- <div id="openModal" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Mi modal</h2>
+        <p>Peliculas </p> 
+      </div>
+    </div>  -->
+    <img class="img" data-toggle="modal" data-target="#exampleModal" src="https://i.pinimg.com/564x/71/58/c4/7158c449f2e8c96bec564fb845ff2cc0.jpg" title="Foto9" alt="Foto9">
     <img class="img" src="https://i.pinimg.com/564x/c9/3b/bf/c93bbf709665e8584a4e4b0ac532a911.jpg" title="Foto10" alt="Foto10">
     <img class="img" src="https://i.pinimg.com/564x/1a/4f/d5/1a4fd570b61a4bcf5f88c56482e97cd7.jpg" title="Foto11" alt="Foto11">
 </div>
 
-<script src= "https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity= "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin= "anonymous" ></script> <script src= "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity= "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin= "anonymous" ></script> <script src= "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity= "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin= "anonymous" ></script> 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
     <script src="main.js"></script>
    <!-- <script src="dataMovies.js"></script>-->
-    <script src="styleMovie.css"></script>
-    
+  
   </body>
 </html>
