@@ -352,5 +352,14 @@ body {
         transform: scale(0.75) translateX(0);
     }
 }
+#Filmov{
+
+    width:200px;
+    height:150px;
+}
+
+#barmain{
+    background-color: red;
+}
 
 
