@@ -4,8 +4,13 @@ const search = document.getElementById("search");
 const printMovie =  document.getElementById("printMovie");
 let dataMovie = "";
 const imgSugerencias= document.getElementById("sugerencias");
-// const printModal= document.getElementById("printModal");
+const home = document.getElementById("home");
 
+// const printModal= document.getElementById("printModal");
+home.addEventListener("click", () => {
+    printMovie.innerHTML="";
+    showGenre.innerHTML="";
+});
 
 search.addEventListener("click",()=>{
     const valueUser = user.value;
