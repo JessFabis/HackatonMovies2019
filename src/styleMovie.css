@@ -1,20 +1,21 @@
 
 
 #root{
-    background-color: #35477d;
+    background-color: #000000;
 
 }
+
 h1{
     font-family: 'Mali', cursive;
     font-size: 40px;
     text-align: center;
-    color :#ffa900;
+    color: white;
 
 
 }
 .cardMovie{
     display:inline-block;
-    border: #f7b633 solid ;
+    border: #f1f0ee solid ;
     border-radius: 20px;
     margin :7px;
     width: 28%;
@@ -49,18 +50,18 @@ h1{
 #user{
     font-family: 'Mali', cursive;
     font-size: 30px;
-    border: solid #68dbeb ;
+    border: solid #690672 ;
     border-radius: 20px;
 }
 #search{
     font-family: 'Mali', cursive;
     font-size: 30px;
-    border:solid #68dbeb ;
+    border:solid #690672 ;
     border-radius: 20px;
 
 }
 #search:hover{
-    background-color:#68dbeb;
+    background-color:#690672;
     opacity: 0.7;
    
 
@@ -76,7 +77,13 @@ html {
 }
 
 body {
-    font-family: "Lato", sans-serif;
+font-family: "Lato", sans-serif;
+background-image: url("https://slack-imgs.com/?c=1&url=https%3A%2F%2Fpng.pngtree.com%2Fthumb_back%2Ffw800%2Fback_pic%2F04%2F56%2F12%2F0958650ae873d40.jpg");
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+height: 100%;
 }
 
 .container {
@@ -125,17 +132,17 @@ body {
     /* transition: 1s all; */
 }
 .box img{
-    width: 100%;
-    height: auto;
-  }
-  @supports(object-fit: cover){
-      .box img{
-        height: 100%;
-        object-fit: cover;
-        object-position: center center;
-      }
-  }
- 
+   width: 100%;
+   height: auto;
+ }
+ @supports(object-fit: cover){
+     .box img{
+       height: 100%;
+       object-fit: cover;
+       object-position: center center;
+     }
+ }
+
 .box:nth-child(2n) {
     transform: scale(0.85);
     z-index: -1;
@@ -220,6 +227,32 @@ body {
     animation: moveToP1Right 0.5s ease-in-out;
 }
 
+.img{
+    width: 20%;
+    paddig: 100%;
+    height: auto;
+    transition: transform .1s ease;
+  }
+  .img-container:hover {
+    transform: scale(1.1);
+  }
+  .card img {
+    opacity: .5;
+    transform: translate(0,0);
+    transition: opacity .25s ease-in-out;
+  }
+  
+  .card img:hover {
+    opacity: 1;
+  }
+  @supports(object-fit: cover){
+      .box img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+
+}
 @keyframes moveOutLeft {
     0% {
         transform: scale(0.75) translateX(0%);

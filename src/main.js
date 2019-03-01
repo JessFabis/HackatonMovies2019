@@ -80,3 +80,23 @@ function shiftRight() {
     }, 500);
 
 }
+//funcionamiento de imagenes de sugerencia
+$(".img").mousemove(function(event){
+    var mouse = event.pageX - $(this).offset().left;
+    var mousea = event.pageY - $(this).offset().top;
+    
+    var imgx = (mouse - 300) / 40;
+    var imgy = (mousea - 200) / 40;
+    
+    $(this).css("transform", "translate(" + imgx + "px," + imgy + "px)");
+  });
+  $(".img").mouseout(function(){
+    $(this).css("transform", "translate(0px,0px)");
+  });
+  
+    
+    
+    
+    
+  
+  
