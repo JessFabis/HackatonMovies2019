@@ -1,21 +1,19 @@
 
-
-#root{
-    background-color: #000000;
-
+#root {
+    background-color: #35477d;
 }
 
 h1{
     font-family: 'Mali', cursive;
     font-size: 40px;
     text-align: center;
-    color: white;
+    color :#ffa900;
 
 
 }
 .cardMovie{
     display:inline-block;
-    border: #f1f0ee solid ;
+    border: #f7b633 solid ;
     border-radius: 20px;
     margin :7px;
     width: 28%;
@@ -49,77 +47,23 @@ h1{
 }
 #user{
     font-family: 'Mali', cursive;
-    font-size: 30px;
-    border: solid #690672 ;
-    border-radius: 20px;
+    font-size: 20px;
+    border: solid #eb6410 ;
+   
 }
 #search{
     font-family: 'Mali', cursive;
-    font-size: 30px;
-    border:solid #690672 ;
-    border-radius: 20px;
+    font-size: 20px;
+    border:solid #eb6410 ;
+  
 
 }
 #search:hover{
-    background-color:#690672;
+    background-color:#eb6410;
     opacity: 0.7;
-    
-    
+   
+
 }
-/*aqui va lo de modal*/
-.modalDialog {
-  position: fixed;
-  font-family: Arial, Helvetica, sans-serif;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0,0,0,0.8);
-  z-index: 99999;
-  opacity:0;
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-  pointer-events: none;
-}
-.modalDialog:target {
-  opacity:1;
-  pointer-events: auto;
-}
-.modalDialog > div {
-  width: 400px;
-  position: relative;
-  margin: 10% auto;
-  padding: 5px 20px 13px 20px;
-  border-radius: 10px;
-  background: #fff;
-  background: -moz-linear-gradient(#fff, #999);
-  background: -webkit-linear-gradient(#fff, #999);
-  background: -o-linear-gradient(#fff, #999);
--webkit-transition: opacity 400ms ease-in;
--moz-transition: opacity 400ms ease-in;
-transition: opacity 400ms ease-in;
-}
-.close {
-  background: #606061;
-  color: #FFFFFF;
-  line-height: 25px;
-  position: absolute;
-  right: -12px;
-  text-align: center;
-  top: -10px;
-  width: 24px;
-  text-decoration: none;
-  font-weight: bold;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  border-radius: 12px;
-  -moz-box-shadow: 1px 1px 3px #000;
-  -webkit-box-shadow: 1px 1px 3px #000;
-  box-shadow: 1px 1px 3px #000;
-}
-.close:hover { background: #00d9ff; }
-/*termina modal*/
 
 html {
     font-size: 16px;
@@ -131,13 +75,7 @@ html {
 }
 
 body {
-font-family: "Lato", sans-serif;
-background-image: url("https://d.wattpad.com/story_parts/609933743/images/15454e329211d0cd194591581928.jpg");
-background-position: center center;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;
-height: 100%;
+    font-family: "Lato", sans-serif;
 }
 
 .container {
@@ -283,21 +221,7 @@ height: 100%;
 
 .img{
     width: 20%;
-    paddig: 100%;
     height: auto;
-    transition: transform .1s ease;
-  }
-  .img-container:hover {
-    transform: scale(1.1);
-  }
-  .card img {
-    opacity: .5;
-    transform: translate(0,0);
-    transition: opacity .25s ease-in-out;
-  }
-  
-  .card img:hover {
-    opacity: 1;
   }
   @supports(object-fit: cover){
       .box img{
@@ -428,4 +352,14 @@ height: 100%;
         transform: scale(0.75) translateX(0);
     }
 }
+#Filmov{
+
+    width:200px;
+    height:150px;
+}
+
+#barmain{
+    background-color: red;
+}
+
 
