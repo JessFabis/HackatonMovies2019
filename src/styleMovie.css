@@ -1,13 +1,15 @@
-#root{
-    background-color: #000000;
 
+#root {
+    background-color: #1A0E32;
 }
+
 
 h1{
     font-family: 'Mali', cursive;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     color: white;
+    background-color: #5C1B47;
 
 
 }
@@ -46,25 +48,32 @@ h1{
     left: 20%;
 }
 #user{
-    font-family: 'Mali', cursive;
-    font-size: 30px;
-    border: solid #690672 ;
-    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: solid #8C53A2    2px;
+    color: #382360;
+    background-color: rgba(39, 79, 155, 0.541);
+   
 }
 #search{
-    font-family: 'Mali', cursive;
-    font-size: 30px;
-    border:solid #690672 ;
-    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border:solid #8C53A2 2px;
+    color: #ffffff;
+    background: #007bff;
+ 
+    
+  
 
 }
 #search:hover{
-    background-color:#690672;
-    opacity: 0.7;
+    background-color:#F05742;
+  
+
     
     
 }
-/aqui va lo de modal/
+/*aqui va lo de modal*/
 .modalDialog {
   position: fixed;
   font-family: Arial, Helvetica, sans-serif;
@@ -130,7 +139,7 @@ html {
 
 body {
 font-family: "Lato", sans-serif;
-background-image: url("https://d.wattpad.com/story_parts/609933743/images/15454e329211d0cd194591581928.jpg");
+background-image: url("https://slack-imgs.com/?c=1&url=https%3A%2F%2Fpng.pngtree.com%2Fthumb_back%2Ffw800%2Fback_pic%2F04%2F56%2F12%2F0958650ae873d40.jpg");
 background-position: center center;
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -281,21 +290,7 @@ height: 100%;
 
 .img{
     width: 20%;
-    paddig: 100%;
     height: auto;
-    transition: transform .1s ease;
-  }
-  .img-container:hover {
-    transform: scale(1.1);
-  }
-  .card img {
-    opacity: .5;
-    transform: translate(0,0);
-    transition: opacity .25s ease-in-out;
-  }
-  
-  .card img:hover {
-    opacity: 1;
   }
   @supports(object-fit: cover){
       .box img{
@@ -426,3 +421,18 @@ height: 100%;
         transform: scale(0.75) translateX(0);
     }
 }
+#Filmov{
+
+    width:190px;
+    height:130px;
+}
+
+.barmain{
+    background-image:url("img/fondo.png");
+}
+.nav-link{
+    font-size:40px; 
+    color: #FFFFFF;
+}
+
+
