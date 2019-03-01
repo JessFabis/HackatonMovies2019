@@ -3,6 +3,7 @@ const user = document.getElementById("user");
 const search = document.getElementById("search");
 const printMovie =  document.getElementById("printMovie");
 let dataMovie = "";
+const video = document.getElementById('video')
 
 
 search.addEventListener("click",()=>{
@@ -157,6 +158,7 @@ Action.addEventListener("click", () => {
 
 const forMovieGenre = (dataMovie) =>{
     //dataMovie= JSON.parse(localStorage.getItem("data"));
+    printMovie.innerHTML="";
     showGenre.innerHTML="";
     dataMovie.forEach(element => {
  let showMovie =
@@ -190,3 +192,17 @@ series.addEventListener("click", () => {
     forMovieGenre(arraySeries);
 })
 
+//funcionamiento de imagenes de sugerencia
+$(".img").mousemove(function(event){
+    var mouse = event.pageX - $(this).offset().left;
+    var mousea = event.pageY - $(this).offset().top;
+   
+    var imgx = (mouse - 300) / 40;
+    var imgy = (mousea - 200) / 40;
+   
+    $(this).css("transform", "translate(" + imgx + "px," + imgy + "px)");
+  });
+
+  $(".img").mouseout(function(){
+    $(this).css("transform", "translate(0px,0px)");
+  });
