@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Mali');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 #root {
     background-color: #1A0E32;
 }
 
 
 h1{
-    font-family: 'Mali', cursive;
+    font-family: 'Quicksand', sans-serif;
     font-size: 50px;
     text-align: center;
     color: white;
@@ -13,6 +14,7 @@ h1{
 
 
 }
+
 .cardMovie{
     display:inline-block;
     border: #f1f0ee solid ;
@@ -438,7 +440,7 @@ height: 100%;
    
 
 #barmain{
-    background-color: red;
+    background-color:#8C53A2;
 }
 
 .modalDialog {
@@ -505,4 +507,19 @@ height: 100%;
   }
 h3{
     color :white;
+    
+  }
+  h6{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: rgba(92, 27, 71, 0.603);
+
+
+    
   }
