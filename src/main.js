@@ -29,6 +29,7 @@ search.addEventListener("click",()=>{
 const forMovie = (dataMovie) =>{
     //dataMovie= JSON.parse(localStorage.getItem("data"));
     printMovie.innerHTML="";
+    showGenre.innerHTML="";
     dataMovie.forEach(element => {
  let showMovie =
 `<div class = "cardMovie">
