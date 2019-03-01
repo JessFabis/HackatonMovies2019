@@ -14,14 +14,47 @@
 
 ## Introducción
 
-KINOFILM nace como un proyecto para amantes del cine, que pretende crear una marca que tenga presencia no solo como pagina web, si no también en facebook, instagram, spotify, para todos aquellos amantes del cine. En KINOFILM encontraran una gran opción para conocer mas sobre el septimo arte. 
+<div style="text-align:center" markdown="1">
+ 
+ -![screen](./src/img/filmov1.png) 
+
+
+- ![screen](./src/img/filmov4.png)
+
+
+- ![screen](./src/img/filmov5.png)
+
+
+- ![screen](./src/img/filmov6.png)
+
+
+
+- ![screen](./src/img/face.png)
+
+
+
+- ![screen](./src/img/inst.png)
+
+
+
+- ![screen](./src/img/twit.png)
+
+
+
+
+
+
+</div>
+FILMOV  que pretende crear una marca que tenga presencia no solo como pagina web, si no también en facebook, instagram, spotify, para todos aquellos amantes del cine. En FILMOV encontraran una gran opción para conocer mas sobre el septimo arte. 
 A continuación una liga con la presentación: 
+
 https://docs.google.com/presentation/d/1X7NTyY7tbkQPcTuxu6czD5NWHhaXZthenf3EdX-DsFQ/edit?usp=sharing
 
 ## Descripción
 
-El producto lo definido como "KINOFILM", basado en la palabra Slovena para cine, es una pagina web donde el usuario puede elegir dentro de una base de datos de películas, que se a tomado de OMBD, para poder visualizar diversa información sobre estas, como por ejemplo año de estreno, genero, etc.
-El usuario tiene la opción de buscar por categoría de genero o series a través de la barra de navegacion.
+El producto "FILMOV", basado en la palabra Slovena para cine, es una pagina web donde el usuario puede elegir dentro de una base de datos de películas tomada de OMBD, para poder visualizar diversa información sobre estas, como por ejemplo año de estreno, genero, etc.
+El usuario tiene la opción de buscar por categoría de genero o series a través de la barra de navegacion, acceder a trillers y redes sociales de la marca.
+
 Para poder crear la idea de la pagina se entrevisto a 33 usuarios a travez de una encuesta en google forms:
 
 https://docs.google.com/forms/d/1dFaupVF88PeY2AN9aaRE_K59DusnWDu1lK_CiUZDwkM/edit#responses
